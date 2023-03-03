@@ -1,0 +1,95 @@
+/* Setting background color, font size, and text alignment for the body */
+body {
+    background: #1e555c;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+/* Centering the container div and making it a flex container with items centered */
+body #container {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling for the main title */
+body #container .main-title {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+/* Styling for the length control divs */
+body #container .length-control {
+    width: 250px;
+}
+
+/* Removing default button styles and adding custom styles */
+body #container button {
+    background: none;
+    outline: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Displaying length control and button elements inline */
+body #container .btn-level,
+body #container .length-control {
+    display: inline-block;
+}
+
+/* Styling for the third button in each length control section */
+body #container .btn-level .btn-level:nth-child(3),
+body #container .length-control .btn-level:nth-child(3) {
+    width: 40px;
+}
+
+/* Styling for the timer div */
+body #container .timer {
+    border: 7px solid #13353a;
+    margin: 20px auto 10px auto;
+    width: 270px;
+    height: 160px;
+    border-radius: 50px;
+    position: relative;
+}
+
+/* Setting font color for timer elements */
+.timer {
+    color: white;
+}
+
+/* Positioning the timer wrapper div */
+body #container .timer .timer-wrapper {
+    position: absolute;
+    width: 190px;
+    height: 110px;
+    left: 50%;
+    top: 50%;
+    margin-left: -95px;
+    margin-top: -70px;
+}
+
+/* Styling for the time-left div */
+body #container .timer #time-left {
+    font-family: digital;
+    font-size: 80px;
+}
+
+/* Styling for the active state of the timer control buttons */
+body #container .timer .timer-control button:active {
+    color: #13353a;
+}
+
+/* Media query for screens with a max width of 500px */
+@media screen and (max-width: 500px) {
+    #container {
+        transform: scale(0.8);
+        -webkit-transform: scale(0.8);
+        -moz-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+        -o-transform: scale(0.8);
+    }
+}
